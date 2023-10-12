@@ -4,9 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./products/products.module').then(m => m.ProductsModule),
+    loadChildren: () => import('./products/products.module').then( m => m.ProductsModule ),
   }
-]
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
